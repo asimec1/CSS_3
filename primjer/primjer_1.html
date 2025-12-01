@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <title>Web safe fontovi i boje</title>
+    <style>
+        /* Web-safe fontovi */
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f4f4f4;          /* svijetlo siva pozadina */
+            color: #333333;                     /* tamno sivi tekst */
+        }
+
+        h1 {
+            font-family: "Georgia", "Times New Roman", serif;
+            color: #003366;                     /* tamno plava */
+        }
+
+        p.uvod {
+            font-size: 18px;
+            color: rgb(80, 80, 80);             /* RGB zapis */
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 10px;
+            background-color: #ffcc00;          /* žuta (HEX) */
+            color: #000000;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 4px;
+        }
+
+        .btn:hover {
+            background-color: rgb(255, 200, 0); /* žuta (RGB) */
+        }
+    </style>
+</head>
+<body>
+
+    <h1>LEGO klub – Web safe fontovi</h1>
+    <p class="uvod">
+        Ovaj tekst koristi kombinaciju web safe fontova (Arial, Helvetica, serif) 
+        i osnovnu paletu boja definiranu u HEX i RGB zapisu.
+    </p>
+
+    <a href="#" class="btn">Prijavi se</a>
+
+</body>
+</html>
