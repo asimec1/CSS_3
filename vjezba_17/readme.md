@@ -41,7 +41,7 @@ body {
 ```
     - za naslove (npr. .section-header h1, .section-title, h2 u kontakt i galeriji) postavite drugi font:
 
-        ```css
+ ```css
         .section-header h1,
         .section-title,
         .lego-contact h2,
@@ -49,7 +49,7 @@ body {
             font-family: "Lobster", "Georgia", serif;
         }
 
-        ```
+ ```
 
 **Cilj: svi tekstovi koriste isti osnovni font, a naslovi imaju poseban, prepoznatljiv stil.**
 
@@ -78,7 +78,7 @@ Primjeri smjernica (ne morate ih kopirati doslovno):
 
     - #osnovan neka izgleda kao “kartica” (card):
 
-        ```css     
+ ```css     
         #osnovan {
             background-color: #ffffff;
             border: 2px solid #ffcc00;
@@ -86,10 +86,10 @@ Primjeri smjernica (ne morate ih kopirati doslovno):
             margin-bottom: 16px;
             border-radius: 6px;
         }
-        ```
+  ```
     - .lego-link neka izgleda kao gumb:
 
-        ```css  
+   ```css  
         .lego-link {
             display: inline-block;
             padding: 8px 16px;
@@ -97,7 +97,7 @@ Primjeri smjernica (ne morate ih kopirati doslovno):
             border: 2px solid #0069d9;
             border-radius: 4px;
         }
-        ```
+   ```
 
 ### 2.2. Kontakt forma (contact.html)
 
@@ -165,3 +165,4 @@ U style.css postoji dio:
     - naslovi (h1, h2, .section-title, .section-header h1) → naslovni font
 
     - izbjegavajte previše različitih fontova
+
