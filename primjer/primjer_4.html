@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+<meta charset="UTF-8">
+<title>Primjer – veličina prozora</title>
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+    }
+
+    .hero {
+        /* 60% visine ekrana */
+        height: 60vh;
+        /* unutarnji razmak ovisan o širini prozora */
+        padding: 5vw;
+        background: linear-gradient(135deg, #ffcc00, #ff6600);
+        color: #000;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .hero h1 {
+        font-size: 4vw;  /* veličina naslova ovisna o širini prozora */
+        margin-bottom: 1rem;
+    }
+
+    .hero p {
+        font-size: 1.4vw;
+        max-width: 40rem;
+    }
+</style>
+</head>
+<body>
+
+<section class="hero">
+    <h1>LEGO hero sekcija</h1>
+    <p>
+        Ova sekcija zauzima 60% visine prozora (60vh),
+        a veličina naslova i teksta ovisi o širini prozora (vw).
+        Promijenite veličinu prozora i promatrajte što se događa.
+    </p>
+</section>
+
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+<meta charset="UTF-8">
+<title>Primjer – veličina fonta</title>
+<style>
+    /* Osnovna veličina fonta za cijelu stranicu */
+    html {
+        font-size: 16px;   /* 1rem = 16px */
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+        font-size: 1rem;   /* 16px */
+        padding: 1.5rem;
+    }
+
+    h1 {
+        font-size: 2.5rem; /* 2.5 × 16px = 40px */
+    }
+
+    p {
+        font-size: 1rem;   /* 16px */
+    }
+
+    .naglasak {
+        font-size: 1.6em;  /* 1.2 × veličina fonta roditelja (p) = 19.2px */
+    }
+</style>
+</head>
+<body>
+
+<h1>LEGO klub – veličina fonta</h1>
+
+<p>
+    Ovo je osnovni tekst od <strong>1rem</strong> (16px).
+    <span class="naglasak">Ovaj dio je 1.6em pa je malo veći.</span>
+</p>
+
+</body>
+</html>
