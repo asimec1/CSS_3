@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <title>LEGO pozadina – background primjer</title>
+    <style>
+        /* 
+           1) Pozadina cijele stranice
+           - boja pozadine (fallback)
+           - slika
+           - ne ponavlja se
+           - centrirana
+           - fiksirana (scrolla se sadržaj, slika stoji)
+           - cover: slika pokriva cijeli ekran
+        */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+
+            background: url("img/lego_background.jpg") no-repeat center center fixed;
+            background-size: cover;
+            background-color: #000000; /* vidi se ako se slika ne učita */
+            color: #ffffff;
+        }
+
+        /* Poluprozirna kutija preko slike da se tekst lakše čita */
+        .hero {
+            min-height: 100vh;              /* visina cijelog prozora */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+
+            background-color: rgba(0, 0, 0, 0.4);  /* overlay preko slike */
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            max-width: 600px;
+            font-size: 1.2rem;
+        }
+
+        .hero a {
+            margin-top: 1.5rem;
+            display: inline-block;
+            padding: 0.75rem 1.5rem;
+            background-color: #ffcc00;
+            color: #000;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 4px;
+        }
+
+        .hero a:hover {
+            background-color: #ffdd33;
+        }
+    </style>
+</head>
+<body>
+
+<section class="hero">
+    <h1>LEGO klub</h1>
+    <p>
+        Ovaj primjer koristi background-image, background-repeat, background-size,
+        background-position i background-attachment kako bi cijela stranica imala
+        veliku fiksnu pozadinsku sliku.
+    </p>
+    <a href="#">Saznaj više</a>
+</section>
+
+</body>
+</html>
