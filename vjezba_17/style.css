@@ -1,0 +1,400 @@
+/* Reset osnovnih margina i paddinga */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Osnovni stil za cijelu stranicu */
+body {
+    font-family: "Roboto", Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333333;
+}
+
+/* Omotač da sadržaj ne bude preko cijelog ekrana */
+.page {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+
+/* Header dio stranice */
+header {
+    background-color: white;
+    border: 2px solid #ffcc00;
+    margin: 20px 0 10px 0;
+    padding: 16px;
+    border-radius: 8px;
+}
+
+/* Banner slika unutar headera */
+.banner img {
+    width: 100%;
+    display: block;
+    border-bottom: 3px solid #ffcc00;
+}
+
+/* Navigacija ispod bannera */
+nav {
+    background-color: #333333;
+    padding: 8px;
+    margin-top: 10px;
+    border-radius: 4px;
+}
+
+/* Lista u navigaciji */
+nav ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    padding: 5px 12px;
+    font-size: 14px;
+}
+
+/* NOVI stil za main navigaciju */
+.main-nav a {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    background-color: #333;
+    color: #fff;
+    font-weight: 600;
+    font-family: "Roboto", Arial, sans-serif;
+}
+
+/* PSEUDO KLASE */
+.main-nav a:hover,
+.main-nav a:focus {
+    background-color: #555;
+    outline: 2px solid #fff;
+}
+
+.main-nav a:active {
+    transform: scale(0.97);
+}
+
+.main-nav a:visited {
+    color: #e0e0ff;
+}
+
+/* SELEKTORI ATRIBUTA NA LINKOVIMA */
+.main-nav a[href="gallery.html"] {
+    background-color: #0069d9;
+}
+
+.main-nav a[target="_blank"] {
+    background-color: #ffc107;
+    color: #000;
+}
+
+.main-nav a[target="_blank"]::after {
+    content: " ↗";
+    font-size: 0.85em;
+}
+
+/* Glavni sadržaj */
+main {
+    background-color: white;
+    border: 1px solid #cccccc;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.section {
+    margin-bottom: 24px;
+}
+
+/* Header sekcije */
+.section-header {
+    background-color: #fff7cc;
+    border-left: 4px solid #ffcc00;
+    padding: 12px 18px;
+    margin-bottom: 18px;
+    border-radius: 4px;
+}
+
+.section-header h1 {
+    font-size: 28px;
+    color: #d32f2f;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    font-family: "Lobster", "Georgia", serif;
+}
+
+.section-subtitle {
+    font-size: 16px;
+    color: #444444;
+}
+
+/* Naslovi sekcija */
+.section-title {
+    font-size: 20px;
+    color: #333333;
+    margin-bottom: 8px;
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 4px;
+    font-family: "Lobster", "Georgia", serif;
+}
+
+main p {
+    line-height: 1.5;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.uvod {
+    font-style: italic;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* Kartica "osnovan" */
+#osnovan {
+    background-color: #ffffff;
+    border: 2px solid #ffcc00;
+    padding: 12px 16px;
+    margin-bottom: 16px;
+    border-radius: 6px;
+}
+
+.vazno {
+    color: green;
+    font-weight: bold;
+}
+
+/* Link kartica/gumb */
+.lego-link {
+    display: inline-block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-decoration: none;
+    border: 2px solid #0069d9;
+    padding: 8px 16px;
+    color: #0069d9;
+    background-color: #ffffff;
+    border-radius: 4px;
+}
+
+.lego-link:hover {
+    background-color: #0069d9;
+    color: #ffffff;
+}
+
+/* Slika i opis */
+.image-box {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.lego-slika {
+    width: 300px;
+    border: 2px solid #cccccc;
+    border-radius: 8px;
+    padding: 4px;
+}
+
+.image-caption {
+    font-size: 14px;
+    color: #555555;
+    margin-top: 5px;
+}
+
+.lista-tema {
+    margin-left: 20px;
+    margin-bottom: 10px;
+    list-style-type: square;
+}
+
+.napomena {
+    color: red;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+/* TABLICA RASPOREDA RADIONICA */
+.raspored {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.raspored caption {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.raspored th,
+.raspored td {
+    border: 1px solid #cccccc;
+    padding: 6px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.raspored th {
+    background-color: #fff7cc;
+}
+
+/* Zebra efekt kao bonus */
+.raspored tbody tr:nth-child(even) {
+    background-color: #f5f5f5;
+}
+
+/* ============================
+   KONTAKT FORMA – LEGO SUPPORT
+   ============================ */
+
+/* Sekcija s formom */
+.lego-contact {
+    margin-top: 3rem;
+    padding: 2rem;
+    background-color: #f5f9ff;
+    border-radius: 8px;
+    border: 2px solid #0069d9;
+}
+
+.lego-contact h2 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-family: "Lobster", "Georgia", serif;
+}
+
+.lego-contact p {
+    margin-bottom: 1.5rem;
+}
+
+/* Layout forme */
+.lego-form {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.lego-form .form-row {
+    margin-bottom: 1rem;
+}
+
+.lego-form label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+}
+
+/* Osnovni stil za inpute, select i textarea */
+.lego-form input[type="text"],
+.lego-form input[type="email"],
+.lego-form input[type="password"],
+.lego-form select,
+.lego-form textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0.6rem 0.75rem;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    font: inherit;
+}
+
+/* Red za checkbox/radio + labelu */
+.lego-form .option {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.25rem;
+}
+
+.lego-form .option input[type="checkbox"],
+.lego-form .option input[type="radio"] {
+    width: auto;
+}
+
+/* Fokus, checked, disabled, enabled ostaju kao što si imao */
+
+/* GUMB – :hover */
+.lego-form .btn-send {
+    display: inline-block;
+    padding: 0.6rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    background-color: #28a745;
+    color: #ffffff;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.lego-form .btn-send:hover {
+    background-color: #218838;
+}
+
+/* ============================
+   GALERIJA SLIKA
+   ============================ */
+
+   .lego-gallery {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    background-color: #ffffff;
+    border-radius: 8px;
+    border: 1px solid #cccccc;
+}
+
+.lego-gallery h2 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-family: "Lobster", "Georgia", serif;
+}
+
+.lego-gallery p {
+    margin-bottom: 1.5rem;
+}
+
+.lego-gallery .gallery-row {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.lego-gallery .gallery-row img {
+    flex: 0 0 calc(33.333% - 0.7rem);
+    max-width: 100%;
+    display: block;
+    border: 4px solid transparent;
+}
+
+/* Selektori atributa za vrste setova */
+.lego-gallery img[data-set="city"] {
+    border-color: steelblue;
+}
+
+.lego-gallery img[data-set="technic"] {
+    border-color: darkorange;
+}
+
+.lego-gallery img[data-set="friends"] {
+    border-color: deeppink;
+}
+
+/* Sve .jpg slike u galeriji */
+.lego-gallery img[src$=".jpg"] {
+    border-radius: 8px;
+    width: 30%;
+}
+
+/* Hover efekt na slikama */
+.lego-gallery img:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    cursor: pointer;
+}
