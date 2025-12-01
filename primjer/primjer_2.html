@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <title>Google Fonts i boje</title>
+
+    <!-- Uvoz Google fonta Roboto -->
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Lobster&display=swap">
+
+    <style>
+        body {
+            font-family: "Roboto", Arial, sans-serif; /* Google font + fallback */
+            background-color: #ffffff;
+            color: #222222;
+        }
+
+        h1 {
+            font-family: "Lobster", cursive;   /* dekorativni Google font za naslov */
+            font-size: 42px;
+            color: #d32f2f;                    /* crvena */
+        }
+
+        p.uvod {
+            font-size: 18px;
+            color: #555555;
+        }
+
+        .card {
+            max-width: 500px;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 8px;
+            background-color: #f5f5f5;
+            border: 2px solid #d32f2f;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: #1976d2;         /* plavi gumb */
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 700;
+            border-radius: 4px;
+        }
+
+        .btn:hover {
+            background-color: #0d47a1;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <h1>LEGO klub</h1>
+        <p class="uvod">
+            Ovaj primjer koristi Google fontove <strong>Roboto</strong> i <strong>Lobster</strong>.
+            Fontovi se učitavaju s interneta, pa svi korisnici vide isti izgled teksta.
+        </p>
+        <a href="#" class="btn">Saznaj više</a>
+    </div>
+
+</body>
+</html>
