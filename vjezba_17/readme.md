@@ -9,8 +9,6 @@ Radite na datotekama:
 - `gallery.html`
 - `style.css`
 
-(Profesor će vam dati link na GitHub repozitorij.)
-
 Cilj je:
 
 - razumjeti kako **border, padding i margin** utječu na izgled elemenata  
@@ -165,4 +163,5 @@ U style.css postoji dio:
 
     - body → glavni Google font
     - naslovi (h1, h2, .section-title, .section-header h1) → naslovni font
+
     - izbjegavajte previše različitih fontova
