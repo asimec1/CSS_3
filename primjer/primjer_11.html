@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+<meta charset="UTF-8">
+<title>Primjer 9 – LEGO Batman hero sekcija</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+    html {
+        font-size: 16px;
+    }
+
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        color: #ffffff;
+        background-color: #020308; /* fallback tamna pozadina */
+    }
+
+    /* MOBITEL – osnovna verzija (mobile-first) */
+    .hero {
+        /* LEGO Batman slika za mobitel */
+        background-image: url("img/hero-lego-mobile.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+
+        min-height: 70vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+
+        position: relative; /* za overlay */
+        padding: 1.5rem 1rem;
+    }
+
+    /* poluprozirni overlay da se tekst bolje čita */
+    .hero::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.55);
+    }
+
+    .hero-content {
+        position: relative;
+        max-width: 40rem;
+    }
+
+    .hero h1 {
+        /* clamp(min, ideal, max) – raste s širinom ekrana */
+        font-size: clamp(1.8rem, 6vw, 3rem);
+        margin-bottom: 0.75rem;
+    }
+
+    .hero p {
+        font-size: clamp(0.95rem, 3.5vw, 1.2rem);
+        margin-bottom: 1.4rem;
+        line-height: 1.6;
+    }
+
+    .hero a {
+        display: inline-block;
+        padding: 0.7rem 1.6rem;
+        background-color: #ffcc00;
+        color: #000;
+        text-decoration: none;
+        font-weight: bold;
+        border-radius: 999px;
+        font-size: 0.95rem;
+    }
+
+    .hero a:hover {
+        background-color: #ffe15a;
+    }
+
+    /* TABLET – od 768px naviše: druga slika + malo veći tekst */
+    @media (min-width: 768px) {
+        .hero {
+            background-image: url("img/hero-lego-tablet.jpg");
+            min-height: 75vh;
+            padding: 2.5rem 2rem;
+        }
+
+        .hero p {
+            max-width: 36rem;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
+    /* DESKTOP – od 1024px naviše: desktop slika + još malo “epičniji” tekst */
+    @media (min-width: 1024px) {
+        .hero {
+            background-image: url("img/hero-lego-desktop.jpg");
+            min-height: 85vh;
+            padding: 3rem 2rem;
+        }
+
+        .hero h1 {
+            font-size: clamp(2.4rem, 3vw, 3.4rem);
+        }
+
+        .hero p {
+            font-size: 1.15rem;
+        }
+
+        .hero a {
+            font-size: 1rem;
+        }
+    }
+</style>
+</head>
+<body>
+
+<section class="hero">
+    <div class="hero-content">
+        <h1>LEGO Batman akademija CSS-a</h1>
+        <p>
+            Kao što Batman kontrolira Gotham iz sjene, tako ćeš ti kontrolirati
+            izgled svoje web stranice – od boja i fontova do modernog responzivnog layouta.
+        </p>
+        <a href="#">Započni misiju stiliziranja</a>
+    </div>
+</section>
+
+</body>
+</html>

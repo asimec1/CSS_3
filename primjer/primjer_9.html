@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+<meta charset="UTF-8">
+<title>Primjer 9 – Hero sekcija</title>
+<style>
+    html {
+        font-size: 16px;
+    }
+
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        color: #ffffff;
+    }
+
+    .hero {
+        background-image: url("img/hero-lego-desktop.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+
+        min-height: 70vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+
+        /* poluprozirni overlay da se tekst bolje čita */
+        position: relative;
+    }
+
+    .hero::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.45);
+    }
+
+    .hero-content {
+        position: relative;
+        padding: 2rem;
+        max-width: 40rem;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .hero p {
+        font-size: 1.1rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .hero a {
+        display: inline-block;
+        padding: 0.7rem 1.6rem;
+        background-color: #ffcc00;
+        color: #000;
+        text-decoration: none;
+        font-weight: bold;
+        border-radius: 999px;
+    }
+
+    .hero a:hover {
+        background-color: #ffe15a;
+    }
+</style>
+</head>
+<body>
+
+<section class="hero">
+    <div class="hero-content">
+        <h1>LEGO Batman - CSS kroz praktične primjere</h1>
+        <p>
+            Kao što Batman kontrolira Gotham iz sjene, tako ćeš ti kontrolirati
+            izgled svoje web stranice – od boja i fontova do modernog responzivnog layouta.
+        </p>
+        <a href="#">Započni misiju</a>
+    </div>
+</section>
+
+</body>
+</html>
